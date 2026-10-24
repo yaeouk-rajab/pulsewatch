@@ -12,6 +12,14 @@ for teams who want real observability into whether their infrastructure is
 up, degraded, or breaching its error budget, without adopting a full SaaS
 observability platform.
 
+## Screenshots
+
+![Target health dashboard](docs/screenshots/dashboard.png)
+
+![Registered devices](docs/screenshots/devices.png)
+
+_These images are illustrative mockups rendered from this repository's documented screens and API shapes, not captures of a running build. Regenerate or replace them with real captures once the app is running._
+
 ## What this demonstrates
 
 - **Release & Deployment (deep):** safe rollout of a service that must keep
