@@ -14,11 +14,11 @@ observability platform.
 
 ## Screenshots
 
-![Target health dashboard](docs/screenshots/dashboard.png)
+![Operator login](docs/screenshots/login.png)
 
-![Registered devices](docs/screenshots/devices.png)
+![Dashboard with live target status](docs/screenshots/dashboard.png)
 
-_These images are illustrative mockups rendered from this repository's documented screens and API shapes, not captures of a running build. Regenerate or replace them with real captures once the app is running._
+_Real captures from a local run: the Go backend with its scheduler checking three local HTTP endpoints (one healthy, one returning 503 so it is alerting, one slow), the SvelteKit dev server, PostgreSQL and Redis, driven with Playwright. "no data yet" in the uptime column is the honest value for targets created seconds earlier._
 
 ## What this demonstrates
 
