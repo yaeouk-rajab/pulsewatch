@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 import type { Actions, PageServerLoad } from './$types';
-import { backendFetch, SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { backendFetch, SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 // TargetResponse mirrors operatorapi.targetResponse
 // (backend/internal/operatorapi/targets.go) / openapi.yaml's Target schema.

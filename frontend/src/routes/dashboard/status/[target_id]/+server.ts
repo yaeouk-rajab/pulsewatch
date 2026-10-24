@@ -1,6 +1,6 @@
 import { json, error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { backendFetch, SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { backendFetch, SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 import type { TargetStatusResponse } from '../../+page.server';
 
 // GET /dashboard/status/{target_id} is the live-push dashboard's own

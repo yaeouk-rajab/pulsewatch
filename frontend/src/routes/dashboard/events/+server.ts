@@ -1,5 +1,5 @@
 import type { RequestHandler } from './$types';
-import { backendFetch, SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { backendFetch, SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 // GET /dashboard/events is ADR-0010's browser-facing half of the SSE proxy:
 // the browser's EventSource only ever talks to this frontend's own origin
