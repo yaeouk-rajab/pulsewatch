@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { isActionFailure, isRedirect } from '@sveltejs/kit';
 import { load, actions, type DeviceTokenResponse } from './+page.server';
-import { SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 // The exported `load` is typed against the generated `PageServerLoad`,
 // whose default `OutputData` generic widens to include `void` (a

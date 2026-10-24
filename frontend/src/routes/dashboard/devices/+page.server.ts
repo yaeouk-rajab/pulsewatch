@@ -1,6 +1,6 @@
 import { fail, redirect } from '@sveltejs/kit';
 import type { Actions, PageServerLoad } from './$types';
-import { backendErrorMessage, backendFetch, SESSION_COOKIE_NAME } from '$lib/server/backend';
+import { backendErrorMessage, backendFetch, SESSION_COOKIE_NAME } from '#lib/server/backend.ts';
 
 // DeviceTokenResponse mirrors alerting.DeviceTokenRecord
 // (backend/internal/alerting/devicetokens.go) / openapi.yaml's DeviceToken

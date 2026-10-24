@@ -1,14 +1,8 @@
-import { env } from '$env/dynamic/public';
-
-// PUBLIC_API_URL is docker-compose's own existing env var for the backend's
-// base URL (Session 4). $env/dynamic/private explicitly excludes any
-// PUBLIC_-prefixed variable (SvelteKit reserves that prefix exclusively for
-// the public module, regardless of where the value is actually read from),
-// so this has to come from $env/dynamic/public even though every backend
-// call is made server-side, from SvelteKit's own load functions and form
-// actions (see the module doc below) — this module is never imported from
-// client-side code, so the value never actually reaches the browser.
-const BACKEND_URL = env.PUBLIC_API_URL ?? 'http://localhost:8020';
+// PUBLIC_API_URL (declared in src/env.ts) is docker-compose's own env var for the backend's base
+// URL. It is declared private, so it is only readable from server code and never reaches the
+// browser: every backend call is made server-side, from SvelteKit's own load functions and form
+// actions, and this module is never imported from client-side code.
+import { PUBLIC_API_URL as BACKEND_URL } from '$app/env/private';
 
 // SESSION_COOKIE_NAME matches operatorauth.SessionCookieName
 // (backend/internal/operatorauth/session.go) exactly — this frontend never

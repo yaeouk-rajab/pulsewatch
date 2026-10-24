@@ -12,6 +12,14 @@ for teams who want real observability into whether their infrastructure is
 up, degraded, or breaching its error budget, without adopting a full SaaS
 observability platform.
 
+## Screenshots
+
+![Operator login](docs/screenshots/login.png)
+
+![Dashboard with live target status](docs/screenshots/dashboard.png)
+
+_Real captures from a local run: the Go backend with its scheduler checking three local HTTP endpoints (one healthy, one returning 503 so it is alerting, one slow), the SvelteKit dev server, PostgreSQL and Redis, driven with Playwright. "no data yet" in the uptime column is the honest value for targets created seconds earlier._
+
 ## What this demonstrates
 
 - **Release & Deployment (deep):** safe rollout of a service that must keep

@@ -2,7 +2,7 @@
 	import { onDestroy, onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import type { PageProps } from './$types';
-	import { connectLiveEvents, type LiveEvent } from '$lib/liveEvents';
+	import { connectLiveEvents, type LiveEvent } from '#lib/liveEvents.ts';
 	import type { TargetStatusResponse } from './+page.server';
 
 	let { data }: PageProps = $props();
